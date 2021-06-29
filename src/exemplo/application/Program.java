@@ -1,8 +1,8 @@
-package application;
+package exemplo.application;
 
 
-import model.entities.Reservation;
-import model.exceptions.DomainException;
+import exemplo.model.entities.Reservation;
+import exemplo.model.exceptions.DomainException;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
