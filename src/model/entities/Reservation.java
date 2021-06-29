@@ -15,7 +15,7 @@ public class Reservation {
     private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     public Reservation(Integer roomNumber, Date checkIn, Date checkOut) {
-        if (!checkOut.after(checkIn)) {
+        if (checkOut.before(checkIn)) {
             throw new DomainException("Check-out date must be after check-in date");
         }
         this.roomNumber = roomNumber;
